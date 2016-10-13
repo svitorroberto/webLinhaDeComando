@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+ <meta charset="UTF-8"/>
+<h:head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>Cadastro Departamento</title>
+
+    <link rel="StyleSheet" type="text/css" href="/css/style.css" media="screen" />
+</h:head>
+
+<h:body>
+<div id="logo">
+</div>
+<div id="todo">
+<h1>CADASTRO DE DEPARTAMENTO</h1>
+<h:form id="formCadastro">
+<p:messages autoUpdate="true" />
+	<h:panelGrid columns="2" cellpadding="5">
+        <p:outputLabel  value="ID Departamento:" />
+        <p:inputText size="50"  value="#{departamento.d.depto_cod}" />
+              
+        <p:outputLabel value="Nome do Departamento:" />
+        <p:inputText size="50" value="#{departamento.d.depto_descricao}" />
+        
+        <p:outputLabel value="Ramal" />
+        <p:inputText size="50" value="#{departamento.d.depto_ramal}">
+		</p:inputText>
+
+        <p:commandButton value="Cadastrar" actionListener="#{departamento.cadastraDepartamento}" ajax="false" />
+        
+	</h:panelGrid>
+</h:form>
+</div>
+<div id="rodape">
+			<div id="texto">
+				<h5>
+					Cadastro de Funcionários online versão 1.0<br />
+					Copyright © 2016 <a href="http://www.linkedin.com/in/SVitorRoberto">SV-Software Ltda.</a> Todos os direitos reservados.
+				</h5>
+			</div>
+		</div>
+</h:body>
+
+</html>
