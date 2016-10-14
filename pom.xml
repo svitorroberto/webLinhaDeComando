@@ -44,6 +44,12 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.geronimo.devtools/assembly -->
+<dependency>
+    <groupId>org.apache.geronimo.devtools</groupId>
+    <artifactId>org.apache.geronimo.runtime.common</artifactId>
+    <version>2.2.1</version>
+</dependency>
 	</dependencies>
 
 	<build>
